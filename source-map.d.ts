@@ -287,7 +287,7 @@ export interface SourceMapConsumerConstructor {
   ): Promise<T>;
 }
 
-export const SourceMapConsumer: SourceMapConsumerConstructor;
+export const SourceMapConsumer: SourceMapConsumerConstructor & SourceMapConsumer;
 
 export interface BasicSourceMapConsumer extends SourceMapConsumer {
   file: string;
